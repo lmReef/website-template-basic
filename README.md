@@ -1,6 +1,6 @@
 # Basic Website Template
 
-![image](https://github.com/lmReef/website-template-basic/assets/60915116/9689bb03-4e11-4980-b736-3e74cc018658)
+![image](https://github.com/lmReef/website-template-basic/assets/60915116/f772aafe-9bd7-4cdf-b2f1-2b1fae01176f)
 
 This is the first of a few website templates I'm making for personal reference.
 
