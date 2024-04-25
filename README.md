@@ -4,7 +4,15 @@
 
 This is the first of a few website templates I'm making for personal reference.
 
-This template should contain only basic packages.
+Hosted with GitHub Pages at: https://lmreef.github.io/website-template-basic
+
+Main tech used:
+- ReactJS
+- TypeScript
+- React Router
+- SASS/SCSS
+- Font Awesome
+- GitHub Pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
