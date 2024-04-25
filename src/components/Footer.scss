@@ -1,0 +1,17 @@
+@use "../vars";
+
+.footer {
+  @include vars.container-styling;
+
+  display: flex;
+  flex-direction: row;
+
+  padding: 3rem 5rem;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1;
+  }
+}
