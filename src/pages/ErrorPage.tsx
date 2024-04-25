@@ -1,12 +1,7 @@
 import { faRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FC } from "react";
-import {
-  ErrorResponse,
-  isRouteErrorResponse,
-  Link,
-  useRouteError,
-} from "react-router-dom";
+import { isRouteErrorResponse, Link, useRouteError } from "react-router-dom";
 import "./ErrorPage.scss";
 
 const ErrorPage: FC = () => {

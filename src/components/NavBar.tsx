@@ -14,7 +14,7 @@ const NavBar: FC = () => {
         <div className="nav-block left">
           <Link to="/">
             <div className="logo">
-              <img src={logo} />
+              <img src={logo} alt="Logo" />
               <h1>Basic Template</h1>
             </div>
           </Link>

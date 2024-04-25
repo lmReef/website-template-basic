@@ -15,7 +15,7 @@ const Button: FC<ButtonProps> = ({ text, image, href, newTab, children }) => {
     <Link to={href || "/"} target={newTab ? "_blank" : "_self"}>
       <div className="button">
         {/* display button content */}
-        {text ? text : image ? <img src={image} /> : ""}
+        {text ? text : image ? <img src={image} alt="Button icon" /> : ""}
         {children}
       </div>
     </Link>
