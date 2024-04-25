@@ -1,4 +1,5 @@
-import { ElementType } from "react";
+import { FC } from "react";
+import { Link } from "react-router-dom";
 import "./Button.scss";
 
 interface ButtonProps {
@@ -6,25 +7,18 @@ interface ButtonProps {
   image?: string;
   href?: string;
   newTab?: boolean;
-  children?: React.ReactElement;
+  children?: React.ReactNode;
 }
 
-const Button: ElementType = ({
-  text,
-  image,
-  href,
-  newTab,
-  children,
-}: ButtonProps) => {
-  console.log(newTab ? "_blank" : "_self");
+const Button: FC<ButtonProps> = ({ text, image, href, newTab, children }) => {
   return (
-    <a href={href} target={newTab ? "_blank" : "_self"}>
+    <Link to={href || "/"} target={newTab ? "_blank" : "_self"}>
       <div className="button">
         {/* display button content */}
         {text ? text : image ? <img src={image} /> : ""}
         {children}
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,25 +1,28 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { ElementType } from "react";
+import { FC } from "react";
+import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 import Button from "./Button";
 import "./NavBar.scss";
 
-const NavBar: ElementType = () => {
+const NavBar: FC = () => {
   return (
     <>
       <nav id="navbar">
         <div className="nav-block left">
-          <a href="/">
+          <Link to="/">
             <div className="logo">
               <img src={logo} />
               <h1>Basic Template</h1>
             </div>
-          </a>
+          </Link>
         </div>
 
         <div className="nav-block center">
+          <Button text="Home" href="/" />
+          <Button text="About" href="/about" />
           <Button text="More Templates" href="/" newTab>
             <FontAwesomeIcon className="icon" icon={faArrowUpRightFromSquare} />
           </Button>

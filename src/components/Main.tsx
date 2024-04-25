@@ -1,7 +1,11 @@
-import { ElementType } from "react";
+import { FC } from "react";
 import "./Main.scss";
 
-const Main: ElementType = ({ children }) => {
+interface Props {
+  children?: React.ReactNode;
+}
+
+const Main: FC<Props> = ({ children }) => {
   return <main className="main-content">{children}</main>;
 };
 

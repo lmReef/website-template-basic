@@ -1,0 +1,23 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100vh;
+
+  .go-back {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+
+    .icon {
+      font-size: 1.2rem;
+    }
+  }
+
+  p {
+    filter: opacity(0.8);
+  }
+}
