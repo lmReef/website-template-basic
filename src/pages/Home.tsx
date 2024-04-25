@@ -11,6 +11,7 @@ const Home: FC = () => {
         <li>React Router</li>
         <li>SASS/SCSS</li>
         <li>Font Awesome</li>
+        <li>GitHub Pages</li>
       </ul>
     </div>
   );
