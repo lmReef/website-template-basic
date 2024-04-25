@@ -1,3 +1,4 @@
+import { ElementType } from "react";
 import "./Button.scss";
 
 interface ButtonProps {
@@ -8,7 +9,7 @@ interface ButtonProps {
   children?: React.ReactElement;
 }
 
-const Button: React.ElementType = ({
+const Button: ElementType = ({
   text,
   image,
   href,

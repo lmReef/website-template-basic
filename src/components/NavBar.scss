@@ -1,5 +1,7 @@
+$nav-height: 5rem;
+
 #navbar {
-  height: 5rem;
+  height: $nav-height;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -46,4 +48,11 @@
       width: 4rem;
     }
   }
+}
+
+// because the nav is `position: fixed;`
+.nav-space-placeholder {
+  display: block;
+  height: $nav-height;
+  visibility: hidden;
 }
